@@ -1,4 +1,6 @@
 # Hi 
+[![Build Status](https://github.com/manishkr108/objutils/actions/workflows/go-test.yml/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/go-test.yml?query=branch%3Amain)
+
 # objutils: Go Object Utility Library
 
 ObjUtils is a powerful and flexible Go library designed to handle operations on JSON objects, structs, and maps. It simplifies complex data manipulation tasks such as sorting keys, preserving duplicates, extracting values, and more.
