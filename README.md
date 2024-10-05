@@ -20,7 +20,7 @@ ObjUtils is a powerful and flexible Go library designed to handle operations on 
 You can install this package using `go get`:
 
 ```bash
-go get github.com/manishkr108/objutils
+go get github.com/manishkr108/objutils@v1.0.0
 ```
 
 
