@@ -16,4 +16,4 @@ A lightweight Go library for manipulating object keys, extracting values by key,
 You can install this package using `go get`:
 
 ```bash
-go get github.com/your-username/objutils
+go get github.com/manishkr108/objutils
