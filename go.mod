@@ -1,3 +1,3 @@
-module github.com/manishkr108/objutils
+module objutils
 
 go 1.23
