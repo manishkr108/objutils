@@ -1,3 +1,5 @@
+<a href="github.com/manishkr108/objutils"><img align="right" src="https://github.com/avelino/awesome-go/raw/main/tmpl/assets/logo.png" alt="awesome-go" title="awesome-go" /></a>
+
 
 # objutils: Go Object Utility Library
 
