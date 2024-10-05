@@ -1,4 +1,3 @@
-# objutils
 
 # objutils: Go Object Utility Library
 
@@ -41,6 +40,9 @@ go get github.com/manishkr108/objutils
 
 - StructKeyShortener(s interface{}) map[string]interface{}
 - Returns a map of shortened struct keys and their associated values.
+
+## Usage
+check my main.go file, there are some common use cases and examples of how to use ObjUtils in your Go project.
 
 
 ## Contributing
