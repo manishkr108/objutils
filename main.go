@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"objutils/objutils" // Make sure to adjust the import path according to your project structure
+	"github.com/manishkr108/objutils/objutils" // Make sure to adjust the import path according to your project structure
 )
 
 func main() {
