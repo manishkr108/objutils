@@ -1,9 +1,5 @@
 # Hi 
 
-[![Build Status]([https://github.com/manishkr108/objutils/actions/workflows/curl](https://github.com/manishkr108/objutils/blob/main/.github/workflows/main.yml)/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/main.yml?query=main)
-
-[![Build Status](https://github.com/manishkr108/objutils/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/tests.yaml?query=main)
-
 [![Build Status](https://github.com/manishkr108/objutils/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/main.yml?query=branch%3Amain)
 
 
