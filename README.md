@@ -1,5 +1,5 @@
 # Hi 
-[![Build Status](https://github.com/manishkr108/objutils/actions/workflows/go-test.yml/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/go-test.yml?query=branch%3Amain)
+[![Build Status](https://github.com/manishkr108/objutils/actions/workflows/curl/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/curl?query=main)
 
 # objutils: Go Object Utility Library
 
