@@ -1,4 +1,4 @@
-The MIT License (MIT)
+MIT License
 
 Copyright (c) 2024 Manish Kumar
 
@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-### Key Points about Redistributable Licenses Like the MIT License:
-- **Freedom to Use**: You can use the software for any purpose, including commercial use.
-- **Freedom to Modify**: You can modify the source code to suit your needs.
-- **Freedom to Distribute**: You can distribute the original or modified versions of the software without restrictions.
-- **Permissive Licensing**: Allows sublicensing, so you can use this software in larger projects, even if those projects have different licenses.
-- **Warranty Disclaimer**: The software is provided "as is," without any warranties, meaning the author is not liable for any issues that arise from using it.
