@@ -1,0 +1,56 @@
+name: Go Test
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*.*.*'  # This will trigger the workflow when a new tag is pushed
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Go environment
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23'  # Specify your Go version here
+
+      # Cache Go modules
+      - name: Cache Go modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      # Install dependencies
+      - name: Install dependencies
+        run: go mod tidy
+
+      # Run tests
+      - name: Run tests
+        run: go test -v ./objutils/...
+
+      # Optionally: Run Go linting
+      - name: Run GoLint
+        run: go install golang.org/x/lint/golint@latest && golint ./objutils/...
+
+      # Request pkg.go.dev to update the version information
+      - name: Request pkg.go.dev index update
+        run: |
+          curl -X POST "https://pkg.go.dev/github.com/YOUR_GITHUB_USER/YOUR_REPO/@latest"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token (auto-generated for Actions)
