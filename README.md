@@ -4,7 +4,7 @@
 
 [![Build Status](https://github.com/manishkr108/objutils/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/manishkr108/objutils/actions/workflows/tests.yaml?query=main)
 
-[![Build Status](https://github.com/avelino/awesome-go/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/avelino/awesome-go/actions/workflows/tests.yaml?query=branch%3Amain)
+[![Build Status](https://github.com/manishkr108/objutils/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/avelino/awesome-go/actions/workflows/main.yml?query=branch%3Amain)
 
 
 # objutils: Go Object Utility Library
