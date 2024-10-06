@@ -5,7 +5,7 @@ on:
     branches:
       - main
     tags:
-      - 'v*.*.*'  # This will trigger the workflow when a new tag is pushed
+      - 'v*.*.*'  # Trigger on any new tag with v prefix
   pull_request:
     branches:
       - main
@@ -15,17 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code from the repository
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Set up Go environment
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.23'  # Specify your Go version here
+          go-version: '1.23'
 
-      # Cache Go modules
       - name: Cache Go modules
         uses: actions/cache@v2
         with:
@@ -36,21 +33,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
 
-      # Install dependencies
       - name: Install dependencies
         run: go mod tidy
 
-      # Run tests
       - name: Run tests
         run: go test -v ./objutils/...
 
-      # Optionally: Run Go linting
       - name: Run GoLint
         run: go install golang.org/x/lint/golint@latest && golint ./objutils/...
 
-      # Request pkg.go.dev to update the version information
-      - name: Request pkg.go.dev index update
+      # Force Go Proxy and pkg.go.dev to update the module version
+      - name: Force Go Proxy Update
         run: |
-          curl -X POST "https://pkg.go.dev/github.com/YOUR_GITHUB_USER/YOUR_REPO/@latest"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token (auto-generated for Actions)
+          curl https://sum.golang.org/lookup/github.com/manishkr108/objutils@v1.0.1

@@ -51,6 +51,6 @@ jobs:
       # Request pkg.go.dev to update the version information
       - name: Request pkg.go.dev index update
         run: |
-          curl -X POST "https://pkg.go.dev/github.com/YOUR_GITHUB_USER/YOUR_REPO/@latest"
+          curl -X POST "https://pkg.go.dev/github.com/Ymanishkr108/objutils/@latest"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token (auto-generated for Actions)
